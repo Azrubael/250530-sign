@@ -1,3 +1,8 @@
+The project with scripts to automatically generate handmade-alike signs.
+
+
+**The suggested order of virtual environment preparation.**
+
 [1] - Install Python 3.10 (or later), pip и python3.10-venv
 * https://docs.python.org/3/using/windows.html#launcher
 * https://pip.pypa.io/en/stable/installing/

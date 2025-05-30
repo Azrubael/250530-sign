@@ -1,6 +1,7 @@
 import os
 import random
 
+
 def get_random_font():
     font_directory = 'fonts/'
     
@@ -15,5 +16,16 @@ def get_random_font():
  
     return f"Выбранный шрифт: {selected_font}"
 
-# Пример использования
-print(get_random_font())
+
+def get_random_file():
+    font_directory = 'fonts/'
+    font_files = [f for f in os.listdir(font_directory) if f.endswith('.ttf')]
+    
+    if not font_files:
+        return None
+ 
+    return f"{font_directory}{random.choice(font_files)}"
+
+
+if __name__ == "__main__":
+    print(get_random_font())
